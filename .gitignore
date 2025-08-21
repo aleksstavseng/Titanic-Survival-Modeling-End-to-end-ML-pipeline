@@ -1,27 +1,26 @@
-# Python-cache og miljø
+# Python / notebooks
 __pycache__/
-*.py[cod]
-*.pyo
+*.pyc
+.ipynb_checkpoints/
+
+# Virtuelle miljøer
 .venv/
 venv/
 env/
-.ipynb_checkpoints/
 
-# Bygg/artefakter
+# Build/packaging
 build/
 dist/
 *.egg-info/
-.eggs/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
 
-# Redaktør/OS
-.DS_Store
-.vscode/
-.idea/
-
-# DATA: ignorer alt i data/, men behold disse to CSV-ene
-data/**
+# Data: ignorer alt i data/, men behold disse CSV-ene
+data/*
 !data/train.csv
 !data/test.csv
+
+# Artefakter: behold i Git
+!results/
+!results/**
+!models/
+!models/**
+!submission.csv
