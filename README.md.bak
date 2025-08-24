@@ -1,7 +1,5 @@
 # Titanic Survival — End-to-end ML pipeline
 
-[Changelog](CHANGELOG.md)
-
 ![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-ff9900?logo=scikitlearn&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green)
