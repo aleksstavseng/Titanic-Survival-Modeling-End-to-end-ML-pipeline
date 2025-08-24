@@ -9,4 +9,4 @@ Artifacts: `results/model_report.md`, `models/hgb_min.pkl`, `submission.csv`.
 **Quick start**
 ```bash
 pip install -r requirements.txt
-python titanic_moonshot.py
+python train.py
