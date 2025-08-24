@@ -13,6 +13,32 @@ Artifacts: `results/model_report.md`, `models/hgb_min.pkl`, `submission.csv`.
 **Release:** se siste versjon under *Releases* (v0.1 med zip av artefakter).
 
 **Quick start**
+## Reproduce locally
+
+> Krever Python 3.12+ og `pip`.
+
+```bash
+# 1) Hent kode
+git clone https://github.com/aleksstavseng/Titanic-Survival-Modeling-End-to-end-ML-pipeline.git
+cd Titanic-Survival-Modeling-End-to-end-ML-pipeline
+
+# 2) (Valgfritt) Virtuelt miljø
+python -m venv .venv
+source .venv/bin/activate    # Windows: .venv\Scripts\activate
+
+# 3) Avhengigheter
+pip install -r requirements.txt
+
+# 4) Data (legg inn Kaggle-filene)
+#   data/train.csv og data/test.csv
+#   (opprett mappa hvis den mangler)
+mkdir -p data
+# kopier inn train.csv og test.csv her
+
+# 5) Kjør treningen
+python train.py
+# Artefakter: submission.csv, results/model_report.md, models/hgb_min.pkl
+
 ```bash
 pip install -r requirements.txt
 python train.py
